@@ -65,7 +65,7 @@ img {
 
 .container {
   width: 100%;
-  padding: 0px 15px;
+  padding: 0px 20px;
   margin: 0 auto;
 
   @media screen and (min-width: 320px) {
@@ -74,10 +74,12 @@ img {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 0px 32px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0px 16px;
   }
 }
 
