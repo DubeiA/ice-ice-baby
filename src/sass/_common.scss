@@ -1,1 +1,23 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --dominant-font: 'DM Sans';
+  --secondary-font: 'Titan One';
+
+  --dominant-color: #ffffff;
+  --secondary-color: #000000;
+
+  --modal-window-color: #e17992;
+
+  --accent-color: #d41443;
+  --accent-secondary-color: #ffa5ba;
+
+  --background-color-white: #e5e5e5;
+  --background-color-pink: #fff5f6;
+
+  --item-pink-color: #ffb8ca;
+  --item-coffee-color: #f0d1a5;
+  --item-green-color: #c2e297;
+
+  //   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
