@@ -29,7 +29,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--dominant-font), sans-serif;
   color: var(--dominant-color);
   letter-spacing: 0.04em;
   background-color: var(--background-color-white);
@@ -98,7 +98,7 @@ img {
 }
 
 .section-hero {
-  font-family: 'Titan One';
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
