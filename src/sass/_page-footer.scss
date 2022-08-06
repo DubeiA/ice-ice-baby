@@ -1,0 +1,82 @@
+.page-footer {
+    padding: 40px 0;
+    background-color: #FFF5F6;
+   
+}
+
+.footer-list {
+    display: block;
+
+}
+
+.footer-list__home {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--accent-secondary-color);
+
+    width: 232px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;  
+    margin-left: 7px;  
+}
+.footer-list__passion{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--accent-color);
+    width: 200px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+.footer-social{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.footer-item{
+    display: flex;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    
+    text-align: right;
+    align-items: center;
+    &__text{
+       color:var(--secondary-color); 
+    }
+    &__contact{
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+}
+.footer-text__ice{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+        
+    
+    text-align: center;
+    
+    color: #907E82;
+
+    width: 280px;
+    border-top: 1px solid #E1E1E1;
+    padding-top: 16px;
+}
