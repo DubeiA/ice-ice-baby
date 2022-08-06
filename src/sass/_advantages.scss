@@ -14,7 +14,7 @@
 }
 
 .advantages__container { 
-        width: 100%;
+        // width: 100%;
         padding: 0px 20px;
         margin: 0 auto;
 
@@ -112,7 +112,7 @@
     margin: 0;
     text-align: start;
 
-    font-family: "Titan One";
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
