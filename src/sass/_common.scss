@@ -2,8 +2,8 @@
 
 :root {
   // ==========  Fonts  ==========
-  --dominant-font: 'DM Sans';
-  --secondary-font: 'Titan One';
+  --dominant-font: "DM Sans";
+  --secondary-font: "Titan One";
 
   // ==========  Fonts-color  ==========
   --dominant-color: #ffffff;
@@ -29,7 +29,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--dominant-font), sans-serif;
   color: var(--dominant-color);
   letter-spacing: 0.04em;
   background-color: var(--background-color-white);
@@ -65,7 +65,7 @@ img {
 
 .container {
   width: 100%;
-  padding: 0px 15px;
+  padding: 0px 20px;
   margin: 0 auto;
 
   @media screen and (min-width: 320px) {
@@ -74,10 +74,12 @@ img {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 0px 32px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0px 16px;
   }
 }
 
@@ -96,7 +98,7 @@ img {
 }
 
 .section-hero {
-  font-family: 'Titan One';
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
