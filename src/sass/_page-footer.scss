@@ -1,16 +1,22 @@
 .page-footer {
     padding: 40px 0;
     background-color: #FFF5F6;
+    
    
+}
+.footer-nav{
+    width: 100%;
+
 }
 
 .footer-list {
     display: block;
+    padding-left: 20px;
 
 }
 
 .footer-list__home {
-    font-family: 'Titan One';
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -22,10 +28,10 @@
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;  
-    margin-left: 7px;  
+     
 }
 .footer-list__passion{
-    font-family: 'Titan One';
+    font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -39,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 16px;
-    margin-left: 5px;
+    
 }
 .footer-social{
     display: flex;
@@ -48,13 +54,17 @@
 }
 .footer-item{
     display: flex;
-    font-family: 'DM Sans';
+    font-family: var(--dominant-font);
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
     
-    text-align: right;
+    margin: auto;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    
+    
     align-items: center;
     &__text{
        color:var(--secondary-color); 
@@ -64,19 +74,31 @@
         text-decoration: none;
     }
 }
+.footer-text{
+    border-top: 1px solid #E1E1E1;
+    
+    width: 100%;
+    height: 61px;
+    padding-bottom: 60px;
+    text-align: center;
+    padding-left: 20px;
+    margin: 0;
+}
 .footer-text__ice{
-    font-family: 'DM Sans';
+    font-family: var(--dominant-font);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
-        
+
+    display: flex;
+    flex-wrap: wrap;
+            
     
-    text-align: center;
-    
+
     color: #907E82;
 
-    width: 280px;
-    border-top: 1px solid #E1E1E1;
-    padding-top: 16px;
+    
+    
+   
 }
