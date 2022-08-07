@@ -1,0 +1,104 @@
+.page-footer {
+    padding: 40px 0;
+    background-color: #FFF5F6;
+    
+   
+}
+.footer-nav{
+    width: 100%;
+
+}
+
+.footer-list {
+    display: block;
+    padding-left: 20px;
+
+}
+
+.footer-list__home {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--accent-secondary-color);
+
+    width: 232px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;  
+     
+}
+.footer-list__passion{
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--accent-color);
+    width: 200px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    
+}
+.footer-social{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.footer-item{
+    display: flex;
+    font-family: var(--dominant-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    
+    margin: auto;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    
+    
+    align-items: center;
+    &__text{
+       color:var(--secondary-color); 
+    }
+    &__contact{
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+}
+.footer-text{
+    border-top: 1px solid #E1E1E1;
+    
+    width: 100%;
+    height: 61px;
+    padding-bottom: 60px;
+    text-align: center;
+    padding-left: 20px;
+    margin: 0;
+}
+.footer-text__ice{
+    font-family: var(--dominant-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+
+    display: flex;
+    flex-wrap: wrap;
+            
+    
+
+    color: #907E82;
+
+    
+    
+   
+}
