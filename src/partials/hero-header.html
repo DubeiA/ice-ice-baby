@@ -13,21 +13,21 @@
   </a>
 
   <nav class="site-nav">
-    <ul>
-      <li>
-        <a href="#">Home</a>
+    <ul class="site-nav__list list link-decor">
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Home</a>
       </li>
-      <li>
-        <a href="#">About us</a>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">About us</a>
       </li>
-      <li>
-        <a href="#">How it's made?</a>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">How it's made?</a>
       </li>
-      <li>
-        <a href="#">Our products</a>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Our products</a>
       </li>
-      <li>
-        <a href="#">Contacts</a>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Contacts</a>
       </li>
     </ul>
   </nav>
@@ -48,11 +48,21 @@
       ></use>
     </svg>
   </button>
-
+  <button class="button__main button--visible" type="button">
+    Buy now
+    <svg class="button__icon">
+      <use
+        class="button__arrow"
+        href="./images/icons.svg#icon-arrow-btn"
+        width="7"
+        height="10"
+      ></use>
+    </svg>
+  </button>
   <!-- Mobile Menu -->
 
   <!-- <div>
-      <button class="mobile__button" type="button">
+      <button class="button__main" type="button">
         Buy now
         <svg>
           <use
@@ -85,15 +95,21 @@
 
 <div class="hero container">
   <!-- Hero -->
-  <dvi class="hero__title--main">
+  <div class="hero__title--main">
     <h1 class="hero__title">
       ice cream <br />
       made with <br />
       <span class="hero__title--accent">passion</span>
     </h1>
-    <button type="button">Products</button>
-    <button type="button">How it’s made?</button>
-  </dvi>
+    <div class="hero__buttons">
+      <button class="button__main button--small button--inverse" type="button">
+        Products
+      </button>
+      <button class="button__main button--small" type="button">
+        How it’s made?
+      </button>
+    </div>
+  </div>
   <img
     class="hero__milk"
     src="./images/header-hero/milk.png"
@@ -105,11 +121,13 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et
   </p>
-  <div class="hero__arrow-circle">
-    <svg class="hero__arrow">
-      <use href="./images/icons.svg#icon-arrow-right" width="8"></use>
-    </svg>
-  </div>
+  <buttton class="hero__arrow-circle">
+    <div>
+      <svg class="hero__arrow">
+        <use href="./images/icons.svg#icon-arrow-right" width="8"></use>
+      </svg>
+    </div>
+  </buttton>
   <div class="hero__circle"></div>
   <img
     class="hero__icecream"
