@@ -25,6 +25,9 @@
   --item-coffee-color: #f0d1a5;
   --item-green-color: #c2e297;
 
+// ==========  Button hover  ==========
+  --button-hover-color: #ECEBEB;
+
   //   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -32,7 +35,7 @@ body {
   font-family: var(--dominant-font), sans-serif;
   color: var(--dominant-color);
   letter-spacing: 0.04em;
-  background-color: var(--background-color-white);
+  background-color: var(--item-pink-color);
   font-size: 14px;
   font-weight: 500;
 }
@@ -117,5 +120,67 @@ img {
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
+  }
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+.button__main {
+  display: block;
+
+  padding-left: 37px;
+  padding-right: 37px;
+  height: 44px;
+
+  border: none;
+  border-radius: 22px;
+  background-color: var(--dominant-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: var(--accent-color);
+
+  cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--button-hover-color);
+    }
+}
+
+.button--inverse {
+  background-color: var(--accent-color);
+  color: var(--dominant-color);
+
+      &:hover,
+        &:focus {
+          background-color: var(--accent-color);
+        }
+
+}
+
+.button--small {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 24px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1200px) {
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.29;
   }
 }
