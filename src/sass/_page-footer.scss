@@ -3,18 +3,16 @@
     padding-bottom: 3px;
     background-color: #FFF5F6;  
 }
-.container{
+.page-footer .container{
     @media screen and (min-width: 768px){
         padding-right: 16px;
         padding-left: 16px;
-        
+        display: flex;
+        justify-content: space-between;
     }
 }
 .footer-nav{
-    border-bottom: 1px solid #E1E1E1;
-
-
-    
+    border-bottom: 1px solid #E1E1E1;    
 }
 .footer-list {
     display: block;
@@ -22,8 +20,6 @@
     @media screen and (min-width: 768px) {
         position: relative;
         
-
-        transform: translateY(40px);
         }
 }
 
@@ -48,6 +44,12 @@
         width: 340px;
     
     }
+        @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+        font-size: 30px;
+        line-height: 34px;
+        width: 472px;
+        }
 }
 .footer-list__passion{
     font-family: var(--secondary-font);
@@ -70,14 +72,30 @@
         line-height: 55px;
         letter-spacing: 0.06em;
         width: 340px;}
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+            font-size: 58px;
+            line-height: 66px;
+            letter-spacing: 0.06em;
+            width:100%;
+        }
 }
 .footer-social{
+    padding-bottom: 40px;
+}
+.footer-social__list{
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
     margin-bottom: 40px;
     height: 32px;
     gap: 28px;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 60px;
+        
+    }
 
 }
 .footer-social__icon{
@@ -109,18 +127,14 @@
 
 .footer-item{
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-family: var(--dominant-font);
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
     
-    margin: auto;
-    justify-content: flex-end;
-    padding-bottom: 40px;
-    
-
-    align-items: center;
     &__text{
        color:var(--secondary-color); 
     }
