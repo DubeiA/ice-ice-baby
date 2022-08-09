@@ -1,15 +1,48 @@
-.section {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
 .about {
     background: var(--background-color-pink);
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 20px;
+
+        background-size: content;
+        background-position: center top 236px;
+        background-repeat: no-repeat;
+
+        background-image: url(../images/about/background-milk-desktop.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/background-milk-desktop-2x.png);
+        }
+    }
 }
 
-.about__container {
-    padding-top: 60px;
-    padding-bottom: 40px;
+.about__content {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-size: content;
+        background-position: center top 390px;
+        background-repeat: no-repeat;
+
+        background-image: url(../images/about/background-milk-mobile.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/background-milk-mobile-2x.png);
+        }
+    }
+
 }
 
 .about__subtitle {
@@ -24,6 +57,16 @@
 
     margin-bottom: 15px;
 
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1, 16;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1, 13;
+    }
 }
 
 .about__title {
@@ -37,35 +80,98 @@
     text-transform: uppercase;
 
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1, 15;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1, 14;
+        letter-spacing: 0.06em;
+        margin-bottom: 60px;
+    }
 }
 
 .about__img {
-    margin-bottom: 40px;
-    display: block;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        height: 335px;
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 501px;
+        height: 501px;
+        margin-right: 99px;
+    }
 }
+
+.about__descr {
+    @media screen and (min-width: 1200px) {
+        padding-top: 90px;
+    }
+}
+
 
 .about__text {
     font-family: var(--dominant-font);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+    width: 220px;
 
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        width: 334px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.76;
+        width: 463px;
+    }
 
     &--dark {
         color: var(--secondary-color);
-        margin-bottom: 40px;
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 40px;
+            height: 79px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 32px;
+        }
     }
 
     &--light {
         color: #907E82;
         margin-bottom: 20px;
 
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 1.94;
+        }
     }
 }
 
 .about__button {
     font-family: var(--dominant-font);
-    background: var(--dominant-color);
+    background-color: var(--dominant-color);
     border: none;
     border-radius: 22px;
     font-weight: 700;
@@ -83,17 +189,21 @@
     padding-left: 37px;
     cursor: pointer;
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         background-color: #ECEBEB;
-        ;
     }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
 }
 
 .about__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--accent-color);
-    margin-left: 13.62px;
+    margin-left: 14px;
 }

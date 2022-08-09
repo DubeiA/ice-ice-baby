@@ -1,18 +1,30 @@
 .page-footer {
-    padding: 40px 0;
-    background-color: #FFF5F6;
-    
-   
+    padding-top: 40px;
+    padding-bottom: 3px;
+    background-color: #FFF5F6;  
+}
+.container{
+    @media screen and (min-width: 768px){
+        padding-right: 16px;
+        padding-left: 16px;
+        
+    }
 }
 .footer-nav{
-    width: 100%;
+    border-bottom: 1px solid #E1E1E1;
 
+
+    
 }
-
 .footer-list {
     display: block;
-    padding-left: 20px;
 
+    @media screen and (min-width: 768px) {
+        position: relative;
+        
+
+        transform: translateY(40px);
+        }
 }
 
 .footer-list__home {
@@ -29,6 +41,13 @@
     display: flex;
     flex-wrap: wrap;  
      
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        width: 340px;
+    
+    }
 }
 .footer-list__passion{
     font-family: var(--secondary-font);
@@ -46,12 +65,48 @@
     flex-wrap: wrap;
     margin-top: 16px;
     
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: 0.06em;
+        width: 340px;}
 }
 .footer-social{
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
+    margin-bottom: 40px;
+    height: 32px;
+    gap: 28px;
+
 }
+.footer-social__icon{
+    fill: currentColor;
+    
+}
+.footer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background: #FEA5BB;
+    fill: currentColor;
+
+    
+
+    &:hover,
+    &:focus {
+        background: var(--accent-color);
+        color:var(--dominant-color);
+        fill: currentColor;
+
+    }
+}
+
+
 .footer-item{
     display: flex;
     font-family: var(--dominant-font);
@@ -64,7 +119,7 @@
     justify-content: flex-end;
     padding-bottom: 40px;
     
-    
+
     align-items: center;
     &__text{
        color:var(--secondary-color); 
@@ -75,14 +130,16 @@
     }
 }
 .footer-text{
-    border-top: 1px solid #E1E1E1;
-    
-    width: 100%;
-    height: 61px;
-    padding-bottom: 60px;
+    padding-top: 16px;
+    max-width: 150px;
+    margin: auto;
     text-align: center;
-    padding-left: 20px;
-    margin: 0;
+
+    @media screen and (min-width: 768px){
+        max-width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 .footer-text__ice{
     font-family: var(--dominant-font);
@@ -90,15 +147,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
-
-    display: flex;
-    flex-wrap: wrap;
-            
     
-
-    color: #907E82;
-
-    
-    
-   
+    color: #907E82;   
 }

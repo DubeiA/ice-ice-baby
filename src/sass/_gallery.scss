@@ -1,9 +1,17 @@
+.gallery-section{
+    background: linear-gradient(var( --background-color-pink) 0%, var( --background-color-pink) 27%, var(--dominant-color) 27%);
+
+    @media screen and (max-width:1199px){
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background: linear-gradient(var( --background-color-pink) 0%, var( --background-color-pink) 21%, var(--dominant-color) 21%);
+    }
+}
+
 .gallery__container{ 
     display: flex;
     justify-content: center;
-    background: linear-gradient(var( --background-color-pink) 0%, var( --background-color-pink) 21%, var(--dominant-color) 21%);
-
-
+    
 
     @media screen and (min-width:1200px){
    padding-left: 93px; 
