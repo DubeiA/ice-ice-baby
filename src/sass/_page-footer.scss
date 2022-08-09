@@ -2,6 +2,9 @@
     padding-top: 40px;
     padding-bottom: 3px;
     background-color: #FFF5F6;  
+    @media screen and (min-width: 1200px){
+        padding-top: 120px;
+    }
 }
 .page-footer .container{
     @media screen and (min-width: 768px){
@@ -145,6 +148,14 @@
         color: var(--accent-color);
         text-decoration: none;
     }
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+    }
+        @media screen and (min-width: 1200px){
+        font-size: 16px;   
+        letter-spacing: 0.02em;    
+        }
+
 }
 .footer-text{
     padding-top: 16px;
@@ -166,4 +177,10 @@
     line-height: 152%;
     
     color: #907E82;   
+    @media screen and (min-width: 768px){
+    line-height: 186%;}
+    
+        @media screen and (min-width: 1200px){
+        line-height: 186%;
+        }
 }
