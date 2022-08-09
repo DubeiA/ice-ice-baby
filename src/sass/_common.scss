@@ -2,12 +2,13 @@
 
 :root {
   // ==========  Fonts  ==========
-  --dominant-font: "DM Sans";
-  --secondary-font: "Titan One";
+  --dominant-font: 'DM Sans';
+  --secondary-font: 'Titan One';
 
   // ==========  Fonts-color  ==========
   --dominant-color: #ffffff;
   --secondary-color: #000000;
+  --grey-color: #907e82;
 
   // ==========  Modal-window background color  ==========
   --modal-window-color: #e17992;
@@ -25,8 +26,11 @@
   --item-coffee-color: #f0d1a5;
   --item-green-color: #c2e297;
 
-// ==========  Button hover  ==========
-  --button-hover-color: #ECEBEB;
+  // ==========  Button hover  ==========
+  --button-hover-color: #ecebeb;
+
+  // ==========  Border color  ==========
+  --border-color: #e1e1e1;
 
   //   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -123,7 +127,7 @@ img {
   }
 }
 
-h1, p {
+h1, h2, p {
   margin: 0;
   padding: 0;
 }
@@ -151,21 +155,20 @@ button {
 
   cursor: pointer;
 
-    &:hover,
-    &:focus {
-      background-color: var(--button-hover-color);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
 }
 
 .button--inverse {
   background-color: var(--accent-color);
   color: var(--dominant-color);
 
-      &:hover,
-        &:focus {
-          background-color: var(--accent-color);
-        }
-
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .button--small {
@@ -178,13 +181,12 @@ button {
   line-height: 1.25;
 
   @media screen and (min-width: 1200px) {
+    padding-left: 25px;
+    padding-right: 25px;
 
-  padding-left: 25px;
-  padding-right: 25px;
+    height: 40px;
 
-  height: 40px;
-
-  font-size: 14px;
-  line-height: 1.29;
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
