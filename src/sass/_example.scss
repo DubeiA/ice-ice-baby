@@ -1,0 +1,86 @@
+// .customer { 
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+//     // align-items: center;
+
+//     background-color: var(--dominant-color);
+
+//     // padding-bottom: 16px;
+// }
+
+// .customer-section { 
+//     padding-top: 120px;
+//     // padding-bottom: 120px;
+// }
+
+// .customer__foto { 
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     gap: 16px;
+// }
+
+// .customer__block { 
+    
+//     background-color: #FAFAFA;
+//     // background-color: #fbb3b3;
+//     width: 938px;
+//     height: 138px;
+
+//     padding: 32px 73px;
+    
+    
+// }
+
+// // .customer__styles{ 
+
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+
+// //     background-color: aqua;
+    
+// // }
+
+// .customer__figure { 
+//     display: inline-flex;
+//         text-decoration: none;
+//         position: relative;
+
+//         &::before {
+//                 content: "";
+//                 position: absolute;
+//                 top: -20px;
+//                 left: -10px;
+//                 background-image: url(../images/customer-reviews/firure.png),;
+
+//                 width: 54px;
+//                 height: 40px;
+//                 background-position: center;
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//             }
+             
+// }
+
+// .customer__text { 
+
+// text-align: center;
+//     color: #000;
+//     z-index: 1;
+//     background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #e1e1e1 31px, #e1e1e1 31px);
+//     background-position: 50px 44px, 53px 30px;
+//     background-repeat: no-repeat;
+//     background-size: calc(100% - 100px) 100%, 54px 40px;
+//     padding: 43px 58px 26px 65px;
+//     font-size: 12px;
+//     font-style: normal;
+//     font-weight: 500;
+//     line-height: 2.55;
+//     position: relative;
+
+// }
+
