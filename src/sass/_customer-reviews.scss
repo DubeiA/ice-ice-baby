@@ -1,0 +1,118 @@
+.review-section{
+    background-color: var(--dominant-color);
+}
+
+.slider__quote{
+    position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 280px;
+height: 308px;
+padding: 43px 50px 17px 50px;
+overflow: hidden;
+background-color: #fafafa;
+
+&::before{
+    content: "";
+     position: absolute;
+    top: 30px;
+    left: 53px;
+    width: 54px;
+height: 40px;
+    background-image: url('../images/reviews/quote.svg');
+    z-index: 2;
+
+}
+
+}
+
+.slider__textarea{
+
+position: relative;
+width: 180px;
+height: 248px;
+
+font-size: 12px;
+font-weight: 500;
+line-height: 2.55;
+color: var(--secondary-color);
+// padding-top: 47px;
+// padding-bottom: 39px;
+padding-left: 15px;
+padding-right: 8px;
+background-color: #fafafa;
+background: repeating-linear-gradient( #E1E1E1 0px, #E1E1E1 1px, #fafafa 1px, #fafafa 35px,);
+   
+text-align: center;
+// z-index: 3;
+
+// &::before{
+//     content: "";
+//      position: absolute;
+//     top: -15px;
+//     left: 3px;
+//     width: 54px;
+// height: 40px;
+//     background-image: url('../images/reviews/quote.svg');
+//     z-index: 2;
+
+// }
+
+}
+
+.slider__text{
+    z-index: 13;
+}
+
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.slider__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    color: var(--secondary-color);
+    margin-top: 36px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -16px;
+        width:4px;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        box-shadow: -20px 0 0 var(--accent-color), 20px 0 0 var(--accent-color);
+        align-items: center;
+       
+        
+        
+    }
+}
+.review__image{
+margin-bottom: 36px;
+border-radius: 44px;
+}
+
+.swiper{
+    position: relative;
+    }
+
+.swiper .swiper-pagination{
+    background-color: D9D9D9;
+}
+.swiper .swiper-pagination-bullet-active{
+    width: 12px;
+height: 12px;
+background-color: #E5E5E5;
+    background-image: url('../images/reviews/home-pagination.svg');
+}
