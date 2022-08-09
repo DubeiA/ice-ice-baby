@@ -1,7 +1,15 @@
 .review-section{
     background-color: var(--dominant-color);
-}
+  
 
+    @media screen and (min-width:768px) {
+        padding-bottom: 0px;
+   }
+
+   @media screen and (min-width:1200px) {
+    padding-bottom: 60px;
+}
+}
 .slider__quote{
     position: relative;
 display: flex;
@@ -12,19 +20,19 @@ height: 308px;
 padding: 43px 50px 17px 50px;
 overflow: hidden;
 background-color: #fafafa;
+z-index: 1;
 
-&::before{
-    content: "";
-     position: absolute;
-    top: 30px;
-    left: 53px;
-    width: 54px;
-height: 40px;
-    background-image: url('../images/reviews/quote.svg');
-    z-index: 2;
-
+@media screen and (min-width:768px) {
+    width: 620px;
+height: 164px;
+padding: 20px 6px 36px 6px;
 }
 
+@media screen and (min-width:1200px) {
+    width: 968px;
+height: 138px;
+padding: 25px 74px 38px 72px;
+}
 }
 
 .slider__textarea{
@@ -37,32 +45,53 @@ font-size: 12px;
 font-weight: 500;
 line-height: 2.55;
 color: var(--secondary-color);
-// padding-top: 47px;
-// padding-bottom: 39px;
 padding-left: 15px;
 padding-right: 8px;
 background-color: #fafafa;
-background: repeating-linear-gradient( #E1E1E1 0px, #E1E1E1 1px, #fafafa 1px, #fafafa 35px,);
-   
+background: repeating-linear-gradient( #E1E1E1 0px, #E1E1E1 1px, #fafafa 1px, #fafafa 34px);
 text-align: center;
-// z-index: 3;
 
-// &::before{
-//     content: "";
-//      position: absolute;
-//     top: -15px;
-//     left: 3px;
-//     width: 54px;
-// height: 40px;
-//     background-image: url('../images/reviews/quote.svg');
-//     z-index: 2;
 
-// }
+&::after{
+    content: "";
+     position: absolute;
+    top: -15px;
+    left: 3px;
+    width: 54px;
+height: 40px;
+    background-image: url('../images/reviews/quote.svg');
+    z-index: 0;
 
+    @media screen and (min-width:768px) {
+        top: 0px;
+        left: 0px;
+    }
+
+    
+
+}
+@media screen and (min-width:768px) {
+    width: 608px;
+height: 108px;
+padding: 17px 49px 8px 44px;
+background: repeating-linear-gradient(  #fafafa 0px, #fafafa 47px,#E1E1E1 47px, #E1E1E1 48px,#fafafa 48px, #fafafa 77px,#E1E1E1 77px, #E1E1E1 78px,#fafafa 78px, #fafafa 107px,#E1E1E1 107px, #E1E1E1 108px,);
+font-size: 14px;
+line-height: 2.16;
+}
+
+@media screen and (min-width:1200px) {
+    width: 822px;
+height: 75px;
+padding: 15px 35px 8px 37px;
+background: repeating-linear-gradient(  #fafafa 0px, #fafafa 43px,#E1E1E1 43px, #E1E1E1 44px,#fafafa 44px, #fafafa 74px,#E1E1E1 74px, #E1E1E1 75px);
+font-size: 16px;
+line-height: 1.86;
+}
 }
 
 .slider__text{
-    z-index: 13;
+    position: relative;
+    z-index: 3;
 }
 
 
@@ -82,6 +111,9 @@ text-align: center;
     line-height: 1.86;
     color: var(--secondary-color);
     margin-top: 36px;
+    margin-bottom: 32px;
+
+
 
     &::after {
         content: "";
@@ -91,28 +123,71 @@ text-align: center;
         height: 4px;
         background-color: var(--accent-color);
         border-radius: 50%;
-        box-shadow: -20px 0 0 var(--accent-color), 20px 0 0 var(--accent-color);
+        box-shadow: -10px 0 0 var(--accent-color), 10px 0 0 var(--accent-color);
         align-items: center;
        
-        
-        
+       
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 24px;
+        margin-bottom: 48px;
+        font-size: 16px;
+               
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 29px;
+        font-size: 20px;
+               
     }
 }
+
 .review__image{
 margin-bottom: 36px;
 border-radius: 44px;
+
+@media screen and (min-width:768px) {
+    margin-bottom: 20px; 
+}
 }
 
 .swiper{
     position: relative;
     }
 
-.swiper .swiper-pagination{
-    background-color: D9D9D9;
+.swiper .swiper-pagination.custom-pagination{
+    position: absolute;
+    bottom: 0px;
+  }  
+   
+  
+
+
+.swiper .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #D9D9D9;
+    opacity: 1;
+
+    
+   
 }
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+       margin-left: 0px;
+
+        &:not(:last-child){
+     margin-right: 18px;}
+
+        }
+
 .swiper .swiper-pagination-bullet-active{
     width: 12px;
 height: 12px;
-background-color: #E5E5E5;
+border-radius: 0%;
+background-color: #ffffff;
     background-image: url('../images/reviews/home-pagination.svg');
 }
