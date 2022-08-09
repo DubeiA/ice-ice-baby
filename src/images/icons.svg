@@ -25,7 +25,6 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4"
                 d="M5.173 3.2 19.342 16 5.173 28.8" />
         </symbol>
-
         <symbol id="icon-arrow-mod" viewBox="0 0 26 32">
             <path fill="none" stroke="#fff" style="stroke: #fff" stroke-linejoin="round" stroke-linecap="round"
                 stroke-miterlimit="4" stroke-width="6.4" d="M5.173 3.2l14.169 12.8-14.169 12.8">
