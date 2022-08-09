@@ -20,10 +20,10 @@
     display: block;
 
     @media screen and (min-width: 768px) {
-        position: absolute;
+        position: relative;
         
 
-        transform: translateY(-40px);
+        transform: translateY(40px);
         }
 }
 
