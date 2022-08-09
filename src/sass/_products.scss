@@ -2,6 +2,10 @@
   background-color: var(--background-color-white);
 }
 
+.products {
+  // outline: 1px solid tomato;
+}
+
 .products__text {
   display: flex;
   font-family: var(--secondary-font);
@@ -23,22 +27,180 @@
 
   text-align: center;
   margin-top: 15px;
+  margin-bottom: 148px;
 
   color: var(--accent-color);
 }
 
 .products__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 140px;
 }
 
-.products__item {
+.products__items {
+  position: relative;
+  display: block;
+  justify-content: center;
   width: 280px;
   height: 489px;
   padding-top: 160px;
   padding-bottom: 40px;
   border-radius: 24px;
+}
+
+.products__items:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 280px;
+  height: 280px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url(../images/products/ice-cream.png);
+
+  // ===================== Респонсивные фоновые изображения =====================
+  // ============================================================================
+
+  // ======= Для ретина экранов мобильная версия =======
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/ice-cream@2x.png);
+  }
+
+  // ======= Для ретина экранов планшет версия =======
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/ice-cream-md.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/ice-cream-md@2x.png);
+    }
+  }
+
+  // ======= Для ретина экранов ПК версия =======
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/ice-cream-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/ice-cream-lg@2x.png);
+    }
+  }
+}
+
+.products__items:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 280px;
+  height: 280px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url(../images/products/coffee.png);
+
+  // ===================== Респонсивные фоновые изображения =====================
+  // ============================================================================
+
+  // ======= Для ретина экранов мобильная версия =======
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/coffee@2x.png);
+  }
+
+  // ======= Для ретина экранов планшет версия =======
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/coffee-md.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/choko-md@2x.png);
+    }
+  }
+
+  // ======= Для ретина экранов ПК версия =======
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/coffee-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/coffee-lg@2x.png);
+    }
+  }
+}
+
+.products__items:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 280px;
+  height: 280px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url(../images/products/choco.png);
+
+  // ===================== Респонсивные фоновые изображения =====================
+  // ============================================================================
+
+  // ======= Для ретина экранов мобильная версия =======
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/choco@2x.png);
+  }
+
+  // ======= Для ретина экранов планшет версия =======
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/choko-md.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/choko-md@2x.png);
+    }
+  }
+
+  // ======= Для ретина экранов ПК версия =======
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/choco-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/choco-lg@2x.png);
+    }
+  }
 }
 
 .products__item--rectangle-pink {
@@ -54,6 +216,7 @@
 }
 
 .products__item-title {
+  position: relative;
   font-family: var(--secondary-font);
   font-size: 20px;
   line-height: 1.15;
@@ -63,9 +226,23 @@
 
   margin-block-start: 0;
   margin-block-end: 0;
-  // margin-top: 160px;
+  // margin-top: 160px;s
 
   color: var(--dominant-color);
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 127px;
+    bottom: -32px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--dominant-color);
+    box-shadow: 10px 0 0 var(--dominant-color), 20px 0 0 var(--dominant-color);
+    transform: translateY(100%);
+  }
 }
 
 .products__item-text {
@@ -74,8 +251,12 @@
   line-height: 1.5;
   font-weight: 700;
 
+  width: 200px;
+  height: auto;
   text-align: center;
   margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--dominant-color);
 }
@@ -86,12 +267,29 @@
   margin-top: 32px;
 }
 
-// &:before {
-//   content: "";
-//   position: absolute;
-//   width:10px;
-//   height: 10px;
-//   border-radius: 50%;
-//   background: gray;
-//   box-shadow:-20px 0 0 grey, 20px 0 0 grey;
-// }
+.products__button {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 120px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: var(--background-color-white);
+}
+
+.products__icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-color);
+
+  transform: translate(-5px, -5px);
+}
+
+.products__button:hover .products__icon {
+  transform: translate(7px, -5px);
+}
