@@ -1,31 +1,18 @@
-.contacts {
-  padding: 0 20px 0 20px;
-}
-
 .contacts-container {
   width: 320px;
-  padding: 0 20px;
+  padding: 60px 20px 0;
   // width: 100%;
   margin: 0 auto;
+  // padding-top: 60px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
     padding: 0 16px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-
-  @media screen and (min-width: 320px) {
-    padding-top: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
     padding-top: 80px;
   }
 
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     padding-top: 120px;
   }
 }
@@ -67,6 +54,7 @@
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
+  text-transform: uppercase;
   color: var(--dominant-color);
   border-radius: 4px;
   margin-bottom: 20px;
@@ -87,6 +75,7 @@
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
+  text-transform: uppercase;
   color: var(--dominant-color);
   border-radius: 4px;
   margin-bottom: 20px;
@@ -213,6 +202,7 @@
 .contacts-btn {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 
   @media screen and (min-width: 768px) {
@@ -224,4 +214,79 @@
   @media screen and (min-width: 768px) {
     gap: 12px;
   }
+}
+
+.contacts-btn--light {
+  display: block;
+  height: 44px;
+  width: 162px;
+  // padding-left: 32px;
+  // padding-right: 31px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21px / 16px);
+  text-align: center;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--dominant-color);
+  color: var(--accent-color);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 174px;
+    // padding-left: 38px;
+    // padding-right: 56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 168px;
+    // padding-left: 36px;
+    // padding-right: 37px;
+  }
+}
+
+.contacts-btn--accent {
+  display: block;
+  height: 44px;
+  width: 162px;
+  // padding-left: 17px;
+  // padding-right: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21px / 16px);
+  text-align: center;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--accent-color);
+  color: var(--dominant-color);
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 192px;
+    // padding-left: 30px;
+    // padding-right: 52px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+    // padding-left: 35px;
+    // padding-right: 36px;
+  }
+}
+
+.contacts-btn--svg-dark {
+  margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+}
+
+.contacts-btn--svg-light {
+  margin-left: 13px;
 }

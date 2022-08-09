@@ -1,18 +1,30 @@
 .page-footer {
     padding-top: 40px;
     padding-bottom: 3px;
-    background-color: #FFF5F6;
-    
-   
+    background-color: #FFF5F6;  
+}
+.container{
+    @media screen and (min-width: 768px){
+        padding-right: 16px;
+        padding-left: 16px;
+        
+    }
 }
 .footer-nav{
-    width: 100%;
     border-bottom: 1px solid #E1E1E1;
-}
 
+
+    
+}
 .footer-list {
     display: block;
-    padding-left: 20px;
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+        
+
+        transform: translateY(40px);
+        }
 }
 
 .footer-list__home {
@@ -29,6 +41,13 @@
     display: flex;
     flex-wrap: wrap;  
      
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        width: 340px;
+    
+    }
 }
 .footer-list__passion{
     font-family: var(--secondary-font);
@@ -46,6 +65,11 @@
     flex-wrap: wrap;
     margin-top: 16px;
     
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: 0.06em;
+        width: 340px;}
 }
 .footer-social{
     display: flex;
@@ -110,6 +134,12 @@
     max-width: 150px;
     margin: auto;
     text-align: center;
+
+    @media screen and (min-width: 768px){
+        max-width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 .footer-text__ice{
     font-family: var(--dominant-font);
