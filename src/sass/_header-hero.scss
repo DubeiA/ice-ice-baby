@@ -1,25 +1,25 @@
 // header
 
 .page-header {
-    outline: 1px solid blue;
-    
+        
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     position: absolute;
+
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 
-    padding: 8px 0 0 20px;
+    padding-top: 8px;
 
-    background-color: var(--item-pink-color);
+    background-color: transparent;
 
     @media screen and (min-width: 768px) {
-        padding: 32px 32px 0 32px;
-
+        padding-top: 32px;
+        justify-content: flex-start;
         }
 
     @media screen and (min-width: 1200px) {
@@ -27,27 +27,6 @@
         }
 }
 
-.hero {
-    outline: 1px solid red;
-    
-    position: relative;
-    min-width: 320px; 
-    height: 502px;
-    max-width: 1280px;
-
-    padding-top: 100px;
-
-    background-color: var(--item-pink-color);
-    
-    @media screen and (min-width: 768px) {
-        height: 416px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        height: 664px;
-    }
-
-}
 
 .logo__link {
     display: block;
@@ -62,53 +41,11 @@
     fill: var(--accent-color);
 }
 
-.menu__button {
-    display: flex;
-    
-    width: 34px;
-    height: 14px;
 
-    margin-right: 15px;
+// site-nav ======================================================
 
-    border: 0;
-    border-radius: 0;
-
-    background-color: transparent;
-    cursor: pointer;
-
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-    }
-    @media screen and (min-width: 1200px) {
-        display: none; 
-        
-    }
-}
-
-.menu__pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 34px;
-    height: 24px;
-
-}
-
-// .menu__buger {
-
-// }
-
-.menu__close {
-    display: none;
-    
-}
 
 .site-nav {
-    position: absolute;
-    top: 52px;
-    left: 383px;
-
     display: none;
 
     @media screen and (min-width: 1200px) {
@@ -118,6 +55,42 @@
 
 .site-nav__list {
     display: flex;
+    gap: 35px;
+
+    margin-left: 128px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+}
+
+.site-nav__item:hover,
+.site-nav__item:focus {
+    color: var(--accent-color);
+}
+
+.nav__link {
+    display: block;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--accent-color);
+}
+
+.nav__link:visited {
+    color: currentColor;
+}
+
+.nav__link:active {
+    color: var(--dominant-color);
 }
 
 .button__icon {
@@ -128,27 +101,167 @@
 
 .button--visible {
     display: none;
+    margin-left: auto;  
 
     @media screen and (min-width: 768px) {
         display: block;
-        margin-left: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+
+}
+
+// menu button =====================================
+
+.menu__button {
+    display: block;
+
+    position: absolute;
+    top: 27px;
+    right: 15px;
+    z-index: 10;
+    
+    width: 44px;
+    height: 44px;
+    
+    border: 0;
+    border-radius: 0;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+    top: 46px;
+    right: 214px;
+
+    }
+    @media screen and (min-width: 1200px) {
+        display: none; 
+        
     }
 }
 
-.button--small {
+.menu__close {
+    display: none;
+    padding-left: 10px;
+    // z-index: 10;
+    
+}
+
+.menu__button .menu__close {
+    position: absolute;
+    display: none;
+}
+
+.menu__button.is-open .menu__close {
+    display: block;
+    position: fixed;
 
 }
 
-// -----------------------------------------
+.menu__button.is-open .menu__buger {
+    display: none;
+}
+
+
+
+
+// mob menu ============================================== 
+
+.mobile-menu {
+
+    display: none;
+
+    position: fixed;    
+    top: 0;
+    right: 0;
+    z-index: 6;
+
+    padding: 60px 20;
+
+    width: 250px;
+    height: 100%;
+
+    background-color: var(--modal-window-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    @media screen and (min-width: 768px) {
+        // width: 254px;
+        width: 50%;
+    }
+
+    &.is-open {
+        display: block;
+    }
+
+}
+
+.button--mobile {
+    width: 209px;
+    margin-bottom: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width: 768px) {
+        width: 186px;
+        margin-left: 0;
+    }
+
+}
+
+.button--mobile > .button__icon {
+    margin-left: 21px;
+}
+
+.mobile-nav > .nav__item {
+    margin-bottom: 23px;
+}
+
+// hero ============================================== 
+
+.hero {
+
+    position: relative;
+    min-width: 320px;
+    max-width: 1280px;
+    width: 100%;
+
+    height: 502px;
+
+    overflow: hidden;
+
+    background-color: var(--item-pink-color);
+
+    @media screen and (min-width: 768px) {
+        height: 416px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 664px;
+    }
+
+    // @media screen and (max-width: 767px) {
+    //     width: 100%;
+    // }
+
+
+}
 
 // hero pictures
 
 .hero__circle {
-    display: none;
+
+    display: block;
+    
     position: absolute;
     top: 83px;
     left: 36px;
-    z-index: 2;
+    z-index: 1;
 
     width: 346px;
     height: 344px;
@@ -173,10 +286,14 @@
 }
 
 .hero__icecream {
+
+    display: block;
+
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 117px;
     z-index: 3;
+
     @media screen and (min-width: 768px) {
         left: 332px;
         width: 143px;
@@ -186,7 +303,8 @@
         left: 636px;
         width: 236px;
     }
-}
+
+} 
 
 .hero__milk {
     display: none;
@@ -326,32 +444,6 @@
 
 }
 
-// .hero__arrow-circle {
-//     display: none;
-
-//     width: 18px;
-//     height: 18px;
-//     border-radius: 50%;
-
-//     background-color: var(--dominant-color);
-
-//     @media screen and (min-width: 768px) {
-//        display: block;
-
-//        position: absolute;
-//        bottom: 56px;
-//        left: 184px;
-//     }
-        
-//     @media screen and (min-width: 1200px) {
-//         top: 554px;
-//         left: 229px;
-        
-//         width: 26px;
-//         height: 26px;
-//     }
-// }
-
 .hero__arrow {
     position: absolute;
     left: 5px;
@@ -372,7 +464,8 @@
 
     position: absolute;
         top: 92px;
-        right: 10px;
+        right: 20px;
+        z-index: 1;
 
     font-family: var(--secondary-font);
         font-weight: 400;
@@ -393,6 +486,30 @@
         
         font-size: 46px;
         line-height: 1.15;
+    }
+
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: -2px;
+        right: -8px;
+        z-index: -1;
+
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        
+        background-color: var(--dominant-color);
+        @media screen and (min-width: 1200px) {
+            top: -4px;
+            right: -18px;
+            width: 30px;
+            height: 30px;
+        
+            }
     }
 }
 
@@ -429,8 +546,6 @@
 
     width: 124px;
 
-    // font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
