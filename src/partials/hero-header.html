@@ -1,4 +1,4 @@
-<header class="page-header container">
+<header class="page-header container" id="header">
   <a class="logo__link link-decor" href="#"
     ><svg class="logo__pic">
       <use href="./images/icons.svg#icon-logo" width="199" height="50"></use>
@@ -59,7 +59,7 @@
       height="44"
     >
       <use
-        class="menu__icon menu__buger"
+        class="menu__icon menu__burger"
         href="./images/icons.svg#icon-burger"
         width="40"
         height="24"
@@ -91,7 +91,7 @@
 
     <ul class="mobile-nav list">
       <li class="nav__item">
-        <a class="nav__link current" href="./index.html">Home</a>
+        <a class="nav__link current" href="#header">Home</a>
       </li>
       <li class="nav__item">
         <a class="nav__link" href="#advantages">About us</a>
@@ -115,12 +115,10 @@
       <span class="hero__title--accent">passion</span>
     </h1>
     <div class="hero__buttons">
-      <button class="button__main button--small button--inverse" type="button">
-        Products
-      </button>
-      <button class="button__main button--small" type="button">
-        How it’s made?
-      </button>
+      <a class="button__main button--small button--inverse" href="#products"
+        >Products</a
+      >
+      <a class="button__main button--small" href="#products">How it's made?</a>
     </div>
   </div>
   <img
@@ -134,7 +132,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et
   </p>
-  <buttton class="hero__arrow-circle">
+  <buttton type="button" class="hero__arrow-circle">
     <svg class="hero__arrow">
       <use href="./images/icons.svg#icon-arrow-right" width="8"></use>
     </svg>
