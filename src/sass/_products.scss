@@ -17,6 +17,11 @@
     font-size: 26px;
     line-height: 1.15;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .products__title {
@@ -37,6 +42,13 @@
     margin-top: 18px;
     margin-bottom: 158px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-top: 16px;
+    margin-bottom: 281px;
+  }
 }
 
 .products__list {
@@ -47,6 +59,10 @@
 
   @media screen and (min-width: 768px) {
     gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
   }
 }
 
@@ -64,6 +80,13 @@
     width: 224px;
     height: 473px;
     padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 535px;
+    padding-top: 165px;
+    padding-bottom: 60px;
   }
 }
 
@@ -85,6 +108,13 @@
   @media screen and (min-width: 768px) {
     width: 224px;
     height: 224px;
+    transform: translateY(-138px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 394px;
+    transform: translateY(-261px);
   }
 
   // ===================== Респонсивные фоновые изображения =====================
@@ -141,6 +171,13 @@
   @media screen and (min-width: 768px) {
     width: 224px;
     height: 224px;
+    transform: translateY(-138px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 394px;
+    transform: translateY(-261px);
   }
 
   // ===================== Респонсивные фоновые изображения =====================
@@ -197,6 +234,13 @@
   @media screen and (min-width: 768px) {
     width: 224px;
     height: 224px;
+    transform: translateY(-138px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 394px;
+    transform: translateY(-261px);
   }
 
   // ===================== Респонсивные фоновые изображения =====================
@@ -262,6 +306,11 @@
 
   color: var(--dominant-color);
 
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -277,6 +326,10 @@
 
     @media screen and (min-width: 768px) {
       left: 99px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: 171px;
     }
   }
 }
@@ -300,6 +353,12 @@
     line-height: 1.8;
     width: 160px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.8;
+    width: 245px;
+  }
 }
 
 .products__button {
@@ -319,17 +378,22 @@
   @media screen and (min-width: 768px) {
     margin-left: 92px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+    margin-left: 165px;
+  }
 }
 
 .products__icon {
-  display: block;
+  display: inline-block;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 11px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 
-  transform: translate(10px, 10px);
+  transform: translate(15px, 13px);
 }
 
 // .products__button:hover .products__icon {
