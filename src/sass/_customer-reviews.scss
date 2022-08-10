@@ -48,7 +48,7 @@ color: var(--secondary-color);
 padding-left: 15px;
 padding-right: 8px;
 background-color: #fafafa;
-background: repeating-linear-gradient( #E1E1E1 0px, #E1E1E1 1px, #fafafa 1px, #fafafa 34px);
+background: repeating-linear-gradient(  #fafafa 0px, #fafafa 30px, #E1E1E1 30px, #E1E1E1 31px,);
 text-align: center;
 
 
@@ -180,11 +180,18 @@ border-radius: 44px;
        margin-left: 0px;
 
         &:not(:last-child){
-     margin-right: 18px;}
+     margin-right: 18px;
+    margin-left: 0px;
+    }
+     &:last-child{
+        margin-left: 0px;
+     }
 
         }
 
+
 .swiper .swiper-pagination-bullet-active{
+
     width: 12px;
 height: 12px;
 border-radius: 0%;
