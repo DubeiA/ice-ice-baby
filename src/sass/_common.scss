@@ -89,7 +89,9 @@ img {
     width: 1200px;
     padding: 0px 16px;
   }
+  
 }
+
 
 .section {
   padding-top: 60px;
@@ -172,22 +174,3 @@ button {
   }
 }
 
-.button--small {
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 24px;
-
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-
-  @media screen and (min-width: 1200px) {
-    padding-left: 25px;
-    padding-right: 25px;
-
-    height: 40px;
-
-    font-size: 14px;
-    line-height: 1.29;
-  }
-}

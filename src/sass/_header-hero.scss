@@ -1,4 +1,4 @@
-// header
+// ===== header ===========================================
 
 .page-header {
         
@@ -30,6 +30,7 @@
         }
 }
 
+// ===== logo ===================================================
 
 .logo__link {
     display: block;
@@ -45,7 +46,7 @@
 }
 
 
-// site-nav ======================================================
+// ===== site-nav ======================================================
 
 
 .site-nav {
@@ -117,7 +118,7 @@
 
 }
 
-// menu button =====================================
+// ===== menu button ================================================
 
 .menu__button {
     display: block;
@@ -146,12 +147,15 @@
         
     }
 }
+ 
+// .menu__burger {
+//     transform: translateX(2px);
+//     transform: translateY(20px);
+// }
 
 .menu__close {
     display: none;
-    padding-left: 10px;
-    // z-index: 10;
-    
+    transform: translateX(28%);
 }
 
 .menu__button .menu__close {
@@ -165,14 +169,11 @@
 
 }
 
-.menu__button.is-open .menu__buger {
+.menu__button.is-open .menu__burger {
     display: none;
 }
-
-
-
-
-// mob menu ============================================== 
+    
+// ===== mob menu ============================================== 
 
 .mobile-menu {
 
@@ -194,10 +195,10 @@
     font-size: 14px;
     line-height: 1.29;
 
-    @media screen and (min-width: 768px) {
-        // width: 254px;
-        width: 50%;
-    }
+    // @media screen and (min-width: 768px) {
+    //     // width: 254px;
+    //     width: 63%;
+    // }
 
     &.is-open {
         display: block;
@@ -226,7 +227,7 @@
     margin-bottom: 23px;
 }
 
-// hero ============================================== 
+// ===== hero ============================================== 
 
 .hero {
 
@@ -241,6 +242,7 @@
 
     background-color: var(--item-pink-color);
 
+
     @media screen and (min-width: 768px) {
         height: 416px;
     }
@@ -249,14 +251,9 @@
         height: 664px;
     }
 
-    // @media screen and (max-width: 767px) {
-    //     width: 100%;
-    // }
-
-
 }
 
-// hero pictures
+// ===== hero pictures ===================================
 
 .hero__circle {
 
@@ -294,6 +291,7 @@
     display: block;
 
     position: absolute;
+    
     bottom: 0;
     left: 117px;
     z-index: 3;
@@ -350,7 +348,7 @@
 }
 
 
-//  hero text 
+// ===== hero text =========================================
 
 .hero__title--main {
     
@@ -414,9 +412,41 @@
 .hero__buttons {
     display: flex;
     gap: 8px;
+    
     @media screen and (min-width: 1200px) {
         gap: 12px;
     }
+}
+
+.button--small {
+    display: block;
+
+    padding: 7px 15px;
+    
+    height: 24px;
+
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+    text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+    padding: 10px 25px;
+
+        height: 40px;
+
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+.button--small:visited {
+    background-color: var(--dominant-color);
+}
+
+.button--inverse:visited {
+    background-color: var(--accent-color);
 }
 
 .hero__arrow-circle {
@@ -531,8 +561,6 @@
 
     }
 }
-
-// .hero__info--16 {}
 
 .hero__info--23 {
     top: 152px;
