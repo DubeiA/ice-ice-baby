@@ -8,7 +8,7 @@
     @media screen and (min-width: 1200px) {
         padding-bottom: 20px;
 
-        background-size: content;
+        background-size: contain;
         background-position: center top 236px;
         background-repeat: no-repeat;
 
@@ -29,7 +29,7 @@
     }
 
     @media screen and (max-width: 767px) {
-        background-size: content;
+        background-size: contain;
         background-position: center top 390px;
         background-repeat: no-repeat;
 
