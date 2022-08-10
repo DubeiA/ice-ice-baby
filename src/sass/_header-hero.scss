@@ -146,6 +146,12 @@
         display: none; 
         
     }
+    &.is-open {
+        @media screen and (min-width:768px) {
+            top: 20px;
+            right: 32px;
+        }
+    }
 }
  
 // .menu__burger {
