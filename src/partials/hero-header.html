@@ -72,6 +72,7 @@
       ></use>
     </svg>
   </button>
+
   <!-- mobile menu -->
 
   <div class="mobile-menu" data-menu>
@@ -123,7 +124,13 @@
   </div>
   <img
     class="hero__milk"
-    src="./images/header-hero/milk.png"
+    srcset="
+      ./images/header-hero/milk-152.png     152w,
+      ./images/header-hero/milk-304-@2x.png 304w,
+      ./images/header-hero/milk-456-@3x.png 456w
+    "
+    sizes="(min-width: 1200px) 456w, (min-width: 768px) 304w, (min-width: 320px) 152w, 100vw"
+    src="./images/header-hero/milk-152.png"
     width="152px"
     alt="A jug of milk"
   />
@@ -140,7 +147,13 @@
   <div class="hero__circle"></div>
   <img
     class="hero__icecream"
-    src="./images/header-hero/ice-cream.png"
+    srcset="
+      ./images/header-hero/ice-cream-171.png     171w,
+      ./images/header-hero/ice-cream-342-@2x.png 342w,
+      ./images/header-hero/ice-cream-513-@3x.png 513w
+    "
+    src="./images/header-hero/ice-cream-171.png"
+    sizes="(min-width: 1200px) 513w, (min-width: 768px) 342w, (min-width: 320px) 171w, 100vw"
     width="171"
     alt="Ice Cream"
   />
@@ -154,7 +167,15 @@
   </div>
   <img
     class="hero__girl"
-    src="./images/header-hero/girl.png"
+    srcset="
+      ./images/header-hero/girl-190.png     190w,
+      ./images/header-hero/girl-380-@2x.png 380w,
+      ./images/header-hero/girl-570-@3x.png 570w,
+      ./images/header-hero/girl-760-@4x.png 760w
+    "
+    src="./images/header-hero/ice-cream-171.png"
+    sizes="(min-width: 1200px) 570w, (min-width: 768px) 380w, (min-width: 320px) 190w, 100vw"
+    src="./images/header-hero/girl-190.png"
     width="190px"
     alt="A girl with an ice cream"
   />
