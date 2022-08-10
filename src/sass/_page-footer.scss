@@ -94,14 +94,13 @@
     margin-bottom: 40px;
     height: 32px;
     gap: 28px;
+    list-style: none;
 
     @media screen and (min-width: 768px){
-        margin-bottom: 60px;
-        
+        margin-bottom: 60px;  
     }
            @media screen and (min-width: 1200px) {
                margin-top:0;
-    
            }
 }
 .footer-social__icon{
