@@ -1,9 +1,7 @@
 .contacts-container {
   width: 320px;
   padding: 60px 20px 0;
-  // width: 100%;
   margin: 0 auto;
-  // padding-top: 60px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -203,6 +201,7 @@
   font-size: 12px;
   line-height: calc(18px / 12px);
   color: var(--grey-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -248,6 +247,7 @@
   border-radius: 22px;
   background-color: var(--dominant-color);
   color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
   &:hover,
