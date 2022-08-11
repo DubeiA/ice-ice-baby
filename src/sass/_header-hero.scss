@@ -794,7 +794,10 @@
     
     border-radius: 4px;
 }
-
+.checkbox-flex { 
+    display: flex;
+    gap: 5px;
+}
 .checkbox {
     margin-bottom: 15px;
 }
