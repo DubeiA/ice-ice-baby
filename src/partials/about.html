@@ -5,15 +5,22 @@
     <h2 class="about__title">how it’s made?</h2>
 
     <div class="about__content">
-      <img class="about__img" srcset="
+      <img
+        class="about__img"
+        srcset="
           ./images/about/cow-mobile-280.png       280w,
           ./images/about/cow-mobile-2x-560.png    560w,
           ./images/about/cow-tablet-336.png       336w,
           ./images/about/cow-tablet-2x-672.png    672w,
           ./images/about/cow-desktop-501.png      501w,
           ./images/about/cow-desktop-2x-1002.png 1002w
-        " sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (max-width: 767px) 280px, 100vw"
-        src="./images/about/cow-mobile-280.png" alt="Cow and milk" width="280" height="279" />
+        "
+        sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (max-width: 767px) 280px, 100vw"
+        src="./images/about/cow-mobile-280.png"
+        alt="Cow and milk"
+        width="280"
+        height="279"
+      />
 
       <div class="about__descr">
         <p class="about__text about__text--dark">
@@ -26,8 +33,8 @@
           Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt.
-          <br>
-          <br>Aliquam erat volutpat. Aenean accumsan.
+          <br />
+          <br />Aliquam erat volutpat. Aenean accumsan.
         </p>
 
         <button type="button" class="about__button button" data-modal-open>
@@ -37,73 +44,93 @@
           </svg>
         </button>
       </div>
-
     </div>
 
+    <div class="backdrop is-hidden backdrop__is-hidden" data-modal>
+      <div class="about__modal modal__is-hidden">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__icon icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-      <div class="backdrop is-hidden  backdrop__is-hidden" data-modal>
-        <div class="about__modal modal__is-hidden">
-          <button type="button" class="modal__close-button" data-modal-close>
-            <svg class="modal__icon icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        
+        <div>
+          <h2 class="modal-about__title">How is milk made?</h2>
+          <ul class="modal-about__list list">
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle"></p>
+              <p class="modal-about__text">
+                Cows are milked using vacuum cups which are attached to the
+                cow's teats. The milk is sent through stainless steel pipes to
+                large refrigerated vats, then stored at 5°C or less. Within 48
+                hours, milk is taken in tankers to a milk factory where it's
+                pasteurised and homogenised.
+              </p>
+            </li>
 
-          <div> 
-            <h2 class="modal-about__title">How is milk made?</h2>
-            <ul class="modal-about__list list">
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle"></p>
-                  <p class="modal-about__text">
-                    Cows are milked using vacuum cups which are attached to the cow's teats. The milk is sent through stainless steel
-                    pipes
-                    to large refrigerated vats, then stored at 5°C or less. Within 48 hours, milk is taken in tankers to a milk factory
-                    where it's pasteurised and homogenised.</p>
-                </li>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Pasteurisation</p>
+              <p class="modal-about__text">
+                This technique heats milk to 72°C for no less than 15 seconds,
+                then cooled immediately to destroy any harmful bacteria and
+                micro-organisms. This also extends the shelf life.
+              </p>
+            </li>
 
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Pasteurisation</p>
-                  <p class="modal-about__text"> This technique heats milk to 72°C for no less than 15 seconds, then cooled immediately to destroy any harmful bacteria
-                      and micro-organisms. This also extends the shelf life.</p>
-                </li>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Homogenisation</p>
+              <p class="modal-about__text">
+                Milk is put under pressure through fine nozzles, which evenly
+                disperses fat globules. This stops the cream separating and
+                rising to the top, allowing a more consistent texture and taste.
+              </p>
+            </li>
 
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Homogenisation</p>
-                  <p class="modal-about__text">Milk is put under pressure through fine nozzles, which evenly disperses fat globules. This stops the cream separating
-                      and rising to the top, allowing a more consistent texture and taste.</p>
-                </li>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Ultrafiltration</p>
+              <p class="modal-about__text">
+                This moves milk across a membrane under moderate pressure, which
+                holds back protein, fat globules, and a large amount of calcium
+                complexes.
+              </p>
+            </li>
 
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Ultrafiltration</p>
-                  <p class="modal-about__text">This moves milk across a membrane under moderate pressure, which holds back protein, fat globules, and a large amount of
-                    calcium complexes.</p>
-                </li>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Reverse osmosis</p>
+              <p class="modal-about__text">
+                This is very similar to ultrafiltration, but the membrane holds
+                back most of the milk solids and only lets water pass through.
+                Lactose remains in the product. There is no impact on flavour.
+              </p>
+            </li>
 
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Reverse osmosis</p>
-                  <p class="modal-about__text">This is very similar to ultrafiltration, but the membrane holds back most of the milk solids and only lets water pass
-                  through. Lactose remains in the product. There is no impact on flavour.</p>
-                </li>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Ultra osmosis</p>
+              <p class="modal-about__text">
+                This is a combination of ultrafiltration and reverse osmosis,
+                but it holds back milk solids and allows both water and salt to
+                pass through.
+              </p>
+            </li>
 
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Ultra osmosis</p>
-                  <p class="modal-about__text">This is a combination of ultrafiltration and reverse osmosis, but it holds back milk solids and allows both water and
-                  salt to pass through.</p>
-                </li>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Spray drying</p>
+              <p class="modal-about__text">
+                This removes water from milk in order to make powdered milk
+                products. Milk’s nutritional value remains the same.
+              </p>
+            </li>
 
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Spray drying</p>
-                  <p class="modal-about__text"> This removes water from milk in order to make powdered milk products. Milk’s nutritional value remains the same.</p>
-                </li>
-
-                <li class="modal-about__item item">
-                  <p class="modal-about__subtitle">Permeate</p>
-                  <p class="modal-about__text"> Permeate is a technical term which applies to all membrane filtration processes</p>
-                </li>
-              </ul>
-          </div>
+            <li class="modal-about__item item">
+              <p class="modal-about__subtitle">Permeate</p>
+              <p class="modal-about__text">
+                Permeate is a technical term which applies to all membrane
+                filtration processes
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
-
+    </div>
+  </div>
 </section>
