@@ -27,9 +27,14 @@
     </ul>
   </nav>
 
-  <!-- Buy now button -->
+  <!-- modal butoon -->
 
-  <button class="button__main button--visible" type="button">
+  <button
+    class="button__main button--visible open-hero-modal"
+    type="button"
+    href="#"
+    id="open_hero-modal"
+  >
     Buy now
     <svg class="button__icon">
       <use
@@ -159,6 +164,7 @@
     width="171"
     alt="Ice Cream"
   />
+
   <div class="hero__info hero__info--16">
     <p>16</p>
     <p class="hero__text-right">cafes</p>
@@ -180,6 +186,74 @@
     width="190"
     alt="A girl with an ice cream"
   />
+</div>
+
+<!-- modal window -->
+
+<div class="hero-modal" id="hero-modal">
+  <div class="hero-modal__container">
+    <div class="hero-modal__body" id="hero-modal__body">
+      <img
+        class="hero-modal__img"
+        src="./images/header-hero/bull.png"
+        alt="Angry bull"
+      />
+
+      <p class="hero-modal__title">Subscribe first!</p>
+
+      <form action="">
+        <!-- <ul class="list">
+          <li>
+            <input class="checkbox" type="checkbox" /> <span>Ice Cream</span>
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" /> <span>Ice Coffee</span>
+          </li>
+          <li>
+            <input class="checkbox" type="checkbox" /> <span>Milkshake</span>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> -->
+        <input
+          class="hero-modal__input"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="hero-modal__input"
+          type="tel"
+          placeholder="Tel"
+          required
+        />
+        <input
+          class="hero-modal__input"
+          type="email"
+          placeholder="E-mail"
+          required
+        />
+
+        <div class="hero-modal__buttons">
+          <button
+            class="button__main button--inverse hero-modal__button"
+            type="submit"
+          >
+            Subscribe
+          </button>
+          <button class="button__main hero-modal__button" type="submit">
+            Close
+          </button>
+        </div>
+        <!-- <button type="button" class="hero-modal__close" id="hero-modal__close">
+          <svg class="hero-modal__close_icon" width="15" height="15">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button> -->
+      </form>
+    </div>
+  </div>
 </div>
 
 <script src="./mobile-menu.js"></script>

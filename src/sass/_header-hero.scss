@@ -128,7 +128,6 @@
 }
 .mobile-nav {
     width: calc(100% + 40px);
-    // background-color: yellow;
     margin-left: -20px;
 }
 
@@ -155,13 +154,14 @@
 
     @media screen and (min-width: 768px) {
         display: block;
+        
     }
 
     @media screen and (min-width: 1200px) {
         margin-left: auto;
     }
-
 }
+
 
 // ===== menu button ================================================
 
@@ -192,21 +192,14 @@
         
     }
     &.is-open {
-        @media screen and (min-width:768px) {
-            position: fixed;
-        }    
-        
+        position: fixed;
+
         @media screen and (min-width:768px) {
             top: 20px;
             right: 32px;
         }
     }
-}
- 
-// .menu__burger {
-//     transform: translateX(2px);
-//     transform: translateY(20px);
-// }
+} 
 
 .menu__close {
     display: none;
@@ -318,6 +311,7 @@
     display: block;
     
     position: absolute;
+
     top: 83px;
     left: 36px;
     z-index: 1;
@@ -365,6 +359,11 @@
     }
 
 } 
+
+.hero__position {
+    position: relative;
+    
+}
 
 .hero__milk {
     display: none;
@@ -662,3 +661,101 @@
 
 }
 
+
+// ================ modal window ================
+
+.hero-modal {
+    display: none;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+
+    color: var(--secondary-color);
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(98, 98, 98, 0.5);
+}
+
+
+.hero-modal__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-modal__body {
+    position: relative;
+
+    padding: 5px;
+    margin: auto;
+    min-width: 320px;
+    width: 320px;
+    height: fit-content;
+
+    background-color: var(--background-color-pink);
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+.hero-modal__img {
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+}
+.hero-modal__title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: var(--secondary-font);
+    font-size: 35px;
+    color: var(--accent-color);
+}
+
+.hero-modal__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--accent-secondary-color);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.69);
+    }
+}
+
+.hero-modal__input {
+    display: block;
+    outline: none;
+    height: 20px;
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-bottom: 15px;
+}
+
+.hero-modal__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
