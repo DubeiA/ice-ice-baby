@@ -351,7 +351,23 @@
     @media screen and (min-width: 768px) {
         left: 332px;
         width: 143px;
-    
+        &:hover { 
+            animation-name: changePos;
+            animation-duration: 2000ms;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+        @keyframes changePos {
+            0% { 
+                transform: rotate(10deg);
+            }
+            50% { 
+                transform: rotate(150deg);
+            }
+            100% { 
+                transform: rotate(360deg);
+            }
+        }
     }
     @media screen and (min-width: 1200px) {
         left: 636px;
@@ -371,10 +387,17 @@
     position: absolute;
     z-index: 3;
 
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            scale: 1.2;
+        }
+
     @media screen and (min-width: 768px) {
         display: block;
         bottom: 16px;
         left: 32px;
+
         }
         
     @media screen and (min-width: 1200px) {
@@ -390,6 +413,11 @@
 
     position: absolute;
     z-index: 3;
+
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover { 
+        scale: 1.2;
+    }
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -665,7 +693,9 @@
 // ================ modal window ================
 
 .hero-modal {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 
     position: fixed;
     left: 0;
