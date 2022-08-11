@@ -15,6 +15,7 @@
   }
 }
 .contacts {
+  position: relative;
   background-image: linear-gradient(
     to bottom,
     var(--dominant-color) 0%,
@@ -297,4 +298,142 @@
 
 .contacts-btn--svg-light {
   margin-left: 13px;
+}
+
+// modal-style
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стили для модальных окон */
+
+.contacts-modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 280px;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: var(--background-color-pink);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: url(../images/about/background-milk-mobile.png);
+  background-size: contain;
+  background-position: center top 0px;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/background-milk-mobile-2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.contacts-modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+// .contacts-modal__item {
+//   padding: 0;
+// }
+
+.modal__link {
+  padding: 15px 20px;
+  display: inline-block;
+  background-color: var(--accent-color);
+  margin: 10px;
+  color: var(--dominant-color);
+  border-radius: 15px;
+  width: 220px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21px / 16px);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    width: 250px;
+    padding: 15px 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 350px;
+  }
+}
+
+.modal__title {
+  font-family: var(--secondary-font);
+  color: var(--accent-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.45;
+    margin-bottom: 25px;
+  }
+}
+.contacts-modal__pimary-item {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  background-color: var(--background-color-white);
+  border-radius: 15px;
+  // border-bottom: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+}
+
+.contacts-modal__secondary-item {
+  color: var(--secondary-color);
+  background-color: var(--background-color-white);
+  border-radius: 15px;
+  border-bottom: 1px solid var(--accent-color);
 }
