@@ -68,10 +68,7 @@
     line-height: 1.31;
 }
 
-.site-nav__item {
-    // width: 100%;
-    // height: 42px;   
-}
+
 
 .nav__link {
     height: 100%;
@@ -691,34 +688,57 @@
 
 
 // ================ modal window ================
-
+.form-header{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    @media screen and (min-width: 768px){
+        padding: 40px;}
+    
+    @media screen and (min-width: 1200px){
+        padding: 40px;}
+        
+}
 .hero-modal {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-
     position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 11;
-
-    color: var(--secondary-color);
-
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    color: var(--secondary-color);
     background-color: rgba(98, 98, 98, 0.5);
-
+    border-radius: 20px;
     transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1) ;
-    
+    background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/header-hero/raspberries-ice-cream.jpg);
 
+        @media screen and (min-width: 768px){
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;}
+
+        @media screen and (min-width: 1200px){
+            left: 18%;
+            top: 10%;
+            width: 750px;
+            height: 100%;}
+                
     &.is-hidden { 
         visibility: visible;
         opacity: 1;
         pointer-events: visible;
-    }
+    }       
 }
-
-
 .hero-modal__container {
     display: flex;
     width: 100%;
@@ -726,33 +746,28 @@
 }
 
 .hero-modal__body {
-    position: relative;
-
-    padding: 5px;
-    margin: auto;
-    min-width: 320px;
-    width: 320px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
     height: fit-content;
-
-    background-color: var(--background-color-pink);
-
     @media screen and (min-width: 768px) {
         width: 768px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         
-    }
-}
-
-.hero-modal__img {
-    @media screen and (min-width: 768px) {
-        width: 50%;
-    }
+        
+        padding-left: 350px;
+        padding-top: 80px;}
+        
+    
+    @media screen and (min-width: 1200px){
+        padding-left: 350px;
+        padding-top: 80px;}  
+        
 }
 .hero-modal__title {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 10px;
 
     font-family: var(--secondary-font);
@@ -785,23 +800,38 @@
 .hero-modal__input {
     display: block;
     outline: none;
-    height: 20px;
-    width: 100%;
-
-    margin-bottom: 10px;
-
+    height: 50px;
+    width: 300px;
+    
+    margin-bottom: 30px;
+    
     border: 2px solid rgba(193, 148, 148, 0.2);
     
-    border-radius: 4px;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px){
+        height: 50px;
+        width: 100%;
+        margin-bottom: 30px;}
+    
+    @media screen and (min-width: 1200px){
+        height: 50px;
+        width: 100%;
+        margin-bottom: 30px;}       
 }
 .checkbox-flex { 
     display: flex;
     gap: 5px;
+    padding-left: 10px;
+    @media screen and (min-width: 768px){
+    padding-left: 30px;}
+         @media screen and (min-width: 1200px) {
+             padding-left: 30px;
+         }
 }
 .checkbox {
     margin-bottom: 15px;
 }
-
 .hero-modal__buttons {
     display: flex;
     justify-content: center;
