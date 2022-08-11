@@ -33,6 +33,7 @@
     class="button__main button--visible open-hero-modal"
     type="button"
     id="open_hero-modal"
+    data-hero-open
   >
     Buy now
     <svg class="button__icon">
@@ -189,7 +190,7 @@
 
 <!-- modal window -->
 
-<div class="hero-modal" id="hero-modal">
+<div class="hero-modal" id="hero-modal" data-hero-modal>
   <div class="hero-modal__container">
     <div class="hero-modal__body" id="hero-modal__body">
       <img
@@ -241,7 +242,11 @@
           >
             Subscribe
           </button>
-          <button class="button__main hero-modal__button" type="submit">
+          <button
+            class="button__main hero-modal__button"
+            type="submit"
+            data-hero-close
+          >
             Close
           </button>
         </div>
